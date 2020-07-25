@@ -1,12 +1,12 @@
 
-import Navbar from "./components/Navbar";
+import React from "react";
+import Navbar from "../Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function ContactForm() {
     return (
       <div>
-          <Navbar />
         <h1>Contact</h1>
         <hr className="my-4"></hr>
         <label for="exampleFormControlInput1">First and last name.</label>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "./components/Navbar";
+import Navbar from "../Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 
@@ -7,9 +7,6 @@ import logo from './logo.svg';
 const Portfolio = () => {
     return (
       <div className="Portfolio">
-      <div>
-      <Navbar />
-      </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
