@@ -1,30 +1,29 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import projectOneImage from "../../Assets/Images/dasflix_project.JPG";
+import Card from 'react-bootstrap/Card';
+// import Overlay from 'react-bootstrap/Overlay'; 
+
 
 
 function CardProjectOne() {
-    return (
-<div className="card mb-3" style="max-width: 540px;">
-  <div className="row no-gutters">
-    <div className="hovereffect ">
-        <img className="img-responsive" src="./Assets/Images/triva-generator.JPG" alt="Project#1" />
-    <div className="overlay">
-        {/* <div className="col-md-4">
-            <img src="..." className="card-img" alt="...">
-    <div className="col-md-8"> */}
-      <div className="card-body">
-        <h1 className="card-title">DAS FLIX</h1>
-        <h2>Group Project</h2>
-        <p className="card-text">DasFlix is a CRUD MVC project, built to help end users browse, create favorite TV shows and movies. This app was created by the University of Arizona Students: Azucena Gonzalez, Denzell Grant, and Stephen Studer.</p>
-        <p className="card-text"><small className="text-muted">Technologies:</small></p>
-        <a className="info" href="http://www.dasflix.com">Visit</a>
-        <a className="info" href="https://github.com/denzgrant/DasFlix-">Github</a>
+  return (
+    <Card className="bg-dark text-white" border="primary" style={{ width: '28rem' }}>
+      <div class="hovereffect">
+        <Card.Img src={projectOneImage} alt="Card image" style={{ width: 450, height: 250 }} />
+        <div class="overlay">
+          <Card.ImgOverlay>
+            <Card.Title>DAS FLIX</Card.Title>
+            <Card.Text>
+              DasFlix is a CRUD MVC project, built to help end users browse, create favorite TV shows and movies. This app was created by the University of Arizona Students: Azucena Gonzalez, Denzell Grant, and Stephen Studer.
+    </Card.Text>
+            <Card.Text>Technologies: SQL, MySQL, CRUD, MVC, OOP</Card.Text>
+            <Card.Link href="http://www.dasflix.com">Visit</Card.Link>
+            <Card.Link href="https://github.com/denzgrant/DasFlix-">Github</Card.Link>
+          </Card.ImgOverlay>
         </div>
-        </div>
-  </div>
-</div>
-</div>
-    );
+      </div>
+    </Card>
+  );
 }
 
 export default CardProjectOne; 
